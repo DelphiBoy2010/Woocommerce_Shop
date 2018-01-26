@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/08/28 20:15:32.000.514,=C:\Users\kom\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2017/09/29 08:16:54.000.545,=C:\Users\kom\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2017/11/24 21:29:30.000.636,=C:\Users\kom\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2017/12/16 16:17:26.000.257,=C:\Users\kom\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2018/01/26 12:02:15.000.662,=C:\Users\kom\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2018/01/26 12:03:39.000.469,C:\Users\kom\Documents\Embarcadero\Studio\Projects\Unit3.pas=E:\Programming\MyProjects\Woocommerce app\App_git\MainForm.pas</Transaction>
+    <Transaction>2018/01/26 12:03:39.000.469,C:\Users\kom\Documents\Embarcadero\Studio\Projects\Unit3.fmx=E:\Programming\MyProjects\Woocommerce app\App_git\MainForm.fmx</Transaction>
+    <Transaction>2018/01/26 12:03:48.000.635,C:\Users\kom\Documents\Embarcadero\Studio\Projects\Project3.dproj=E:\Programming\MyProjects\Woocommerce app\App_git\WoocommerceAPI_Sample.dproj</Transaction>
+    <Transaction>2018/01/26 12:04:04.000.484,=E:\Programming\MyProjects\Woocommerce app\App_git\API\WordPress.WoocammerceAPI.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<Pmyios iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
