@@ -7,5 +7,150 @@ object Form3: TForm3
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = MostTop
+    Size.Width = 421.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'woocommerce store'
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Align = Top
+    Position.Y = 49.000000000000000000
+    Size.Width = 421.000000000000000000
+    Size.Height = 224.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Layout1: TLayout
+      Align = Top
+      Size.Width = 421.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object edtSiteUrl: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Text = 'http://www.asanyab.org'
+        Size.Width = 308.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label2: TLabel
+        Align = Left
+        Size.Width = 113.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'site:'
+        TabOrder = 1
+      end
+    end
+    object Layout2: TLayout
+      Align = Top
+      Position.Y = 100.000000000000000000
+      Size.Width = 421.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object edtConsumerSecret: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Text = 'cs_d30ca11f55d2a8cedce959100995c3df010a673f'
+        Size.Width = 308.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label3: TLabel
+        Align = Left
+        Size.Width = 113.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Consumer secret '
+        TabOrder = 1
+      end
+    end
+    object Layout3: TLayout
+      Align = Top
+      Position.Y = 50.000000000000000000
+      Size.Width = 421.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object edtConsumerKey: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Text = 'ck_c71dba92a266df1eee1d127c3c8a82a614ed7d54'
+        Size.Width = 308.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label4: TLabel
+        Align = Left
+        Size.Width = 113.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Consumer key '
+        TabOrder = 1
+      end
+    end
+    object Layout4: TLayout
+      Align = Top
+      Position.Y = 150.000000000000000000
+      Size.Width = 421.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object btnLoadCategories: TButton
+        Align = Left
+        Size.Width = 89.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'get categories'
+        OnClick = btnLoadCategoriesClick
+      end
+    end
+  end
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 421.000000000000000000
+    Size.Height = 463.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TImageListItemBottomDetailRightButtonAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemBottomDetailRightButtonShowCheckAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjectsRTL'
+      FooterAppearanceClassName = 'TListHeaderObjectsRTL'
+      Align = Client
+      Size.Width = 421.000000000000000000
+      Size.Height = 463.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+  object RESTClient1: TRESTClient
+    Authenticator = HTTPBasicAuthenticator1
+    Params = <>
+    HandleRedirects = True
+    Left = 200
+    Top = 464
+  end
+  object HTTPBasicAuthenticator1: THTTPBasicAuthenticator
+    Left = 200
+    Top = 520
+  end
+  object qryCategory: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 200
+    Top = 352
+  end
 end
